@@ -25,16 +25,6 @@ const About = () => {
         technology stacks. I&apos;m also open to collaborating on software
         projects.
       </p>
-
-      <Link href={"/timeline"}>
-        <Button
-          className="mt-3 dark:text-zinc-400"
-          size={"sm"}
-          variant={"secondary"}
-        >
-          More info
-        </Button>
-      </Link>
     </div>
   );
 };
