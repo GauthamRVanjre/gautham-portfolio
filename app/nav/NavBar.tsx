@@ -24,7 +24,9 @@ const NavBar = () => {
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
-          <a href="mailto:vanjregautham@gmail.com">Say Hi!</a>
+          <a href="https://www.linkedin.com/in/gautham-r-vanjre-72b858228/">
+            Say Hi!
+          </a>
         </Button>
       </div>
     </div>

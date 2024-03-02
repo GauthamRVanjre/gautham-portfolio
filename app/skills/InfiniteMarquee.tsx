@@ -16,12 +16,11 @@ const InfiniteMarquee = () => {
         <p
           className={` ${styles.strokedTextDark} font-bold dark:opacity-80 text-5xl md:text-6xl`}
         >
-          {`◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦`}
-
+          {`◦ WEB DEVELOPMENT ◦ BACKEND  ◦ FRONTEND ◦ WEB DEVELOPMENT  ◦ FRONTEND ◦ BACKEND`}
         </p>
       ) : (
         <p className={` ${styles.strokedText} font-bold text-5xl md:text-6xl`}>
-          {`◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦`}
+          {`◦ WEB DEVELOPMENT ◦ BACKEND ◦ FRONTEND ◦ WEB DEVELOPMENT  ◦ FRONTEND ◦ BACKEND`}
         </p>
       )}
     </Marquee>
