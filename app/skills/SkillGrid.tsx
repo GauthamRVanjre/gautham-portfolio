@@ -21,7 +21,6 @@ const Skills = () => {
           <Skill key={s.url} skill={s} />
         ))}
       </div>
-      <p className="text-center opacity-40 text-sm mt-5">{`(that's a lot!)`}</p>
     </div>
   );
 };

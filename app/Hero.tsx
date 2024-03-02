@@ -15,7 +15,7 @@ const Hero = () => {
                 Gautham,
               </span>
             </span>{" "}
-            A full-stack{" "}
+            A Web{" "}
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500 dark:text-zinc-400`}
             >

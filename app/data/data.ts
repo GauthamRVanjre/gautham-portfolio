@@ -332,17 +332,17 @@ export const animes = [
 export const socials = [
   {
     name: "Github",
-    url: "https://github.com/ankitrajxd",
+    url: "https://github.com/GauthamRVanjre",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/ankitraaj/",
+    url: "https://www.linkedin.com/in/gautham-r-vanjre-72b858228/",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/isAnkit_",
+    url: "https://twitter.com/vanjregautham1",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
   },
 ];

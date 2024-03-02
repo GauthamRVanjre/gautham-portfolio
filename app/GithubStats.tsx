@@ -7,7 +7,7 @@ const GithubStats = () => {
   const { theme } = useTheme();
 
   return (
-    <div>
+    <div className=" flex  justify-center">
       <GitHubCalendar
         colorScheme={`${theme === "light" ? "light" : "dark"}`}
         year={2024}
