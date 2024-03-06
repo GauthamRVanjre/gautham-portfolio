@@ -279,55 +279,6 @@ export const skills = [
   },
 ];
 
-////////////////
-export const animes = [
-  {
-    title: "Mashle",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
-    description: "Magic is casually used by everyone.",
-    url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
-    tag: "Top",
-    release_date: "2022",
-  },
-  {
-    title: "Solo Leveling",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
-    description: "Ordinary people received superhuman powers.",
-    url: "https://aniwatch.to/solo-leveling-18718?ref=search",
-    tag: "Top",
-    release_date: "2023",
-  },
-  {
-    title: "Jujutsu Kaisen",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
-    description: "Throughout Heaven and Earth, I Alone Am The Honored One",
-    url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
-    tag: "Trending",
-    release_date: "2021",
-  },
-  {
-    title: "Naruto",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
-    description: "I will become hokage one day!",
-    url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
-    release_date: "2002",
-    tag: "Popular",
-  },
-  {
-    title: "Your Name",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/16/ee/16eec56baf8f3fcc6430607f58ce3d12/16eec56baf8f3fcc6430607f58ce3d12.jpg",
-    description: "Story of a high School in tokyo.",
-    url: "https://aniwatchtv.to/your-name-10?ref=search",
-    release_date: "2016",
-    tag: "Movie",
-  },
-];
-
 ///////
 export const socials = [
   {
@@ -344,5 +295,29 @@ export const socials = [
     name: "Twitter",
     url: "https://twitter.com/vanjregautham1",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+  },
+];
+
+export const Testimonials = [
+  {
+    name: "name",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    description: "Description",
+    designation: "Designation",
+  },
+  {
+    name: "name",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    description: "Description",
+    designation: "Designation",
+  },
+  {
+    name: "name",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    description: "Description",
+    designation: "Designation",
   },
 ];

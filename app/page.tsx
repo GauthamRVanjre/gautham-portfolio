@@ -27,11 +27,11 @@ export default function Home() {
         <Projects />
       </div>
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8">
+        <Testimonials />
+      </div>
+      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
         <About />
       </div>
-      {/* <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
-        <Testimonials />
-      </div> */}
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>
