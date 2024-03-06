@@ -1,7 +1,7 @@
 import React from "react";
 import { Testimonials } from "../data/data";
 import TestimonialCard from "./TestimonialCard";
-import AnimatedDiv from "./AnimatedDiv";
+import AnimatedDiv from "../components/AnimatedDiv";
 
 const TestimonialGrid = () => {
   return (

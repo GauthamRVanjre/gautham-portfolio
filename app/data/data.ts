@@ -321,3 +321,30 @@ export const Testimonials = [
     designation: "Designation",
   },
 ];
+
+export const Blogs = [
+  {
+    name: "blog",
+    image: filmflicker,
+    description: "Description description",
+    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+  },
+  {
+    name: "blog",
+    image: filmflicker,
+    description: "Description description",
+    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+  },
+  {
+    name: "blog",
+    image: filmflicker,
+    description: "Description description",
+    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+  },
+  {
+    name: "blog",
+    image: filmflicker,
+    description: "Description description",
+    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+  },
+];

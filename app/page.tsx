@@ -6,7 +6,8 @@ import Footer from "./footer/Footer";
 import About from "./About";
 import GithubStats from "./GithubStats";
 import WorkExperience from "./WorkExperience";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./Testimonials/Testimonials";
+import Blogs from "./Blogs/Blogs";
 
 export default function Home() {
   return (
@@ -23,8 +24,11 @@ export default function Home() {
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <WorkExperience />
       </div>
-      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
+      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8 ">
         <Projects />
+      </div>
+      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
+        <Blogs />
       </div>
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <Testimonials />
