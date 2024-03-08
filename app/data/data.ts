@@ -9,6 +9,9 @@ import htmlcss from "@/public/htmlcss.webp";
 import gadaElectronics from "@/public/gada-electronics.png";
 import eventConnect from "@/public/event-connect-home.png";
 import getFit from "@/public/getFit-Home.jpeg";
+import reactQuery from "@/public/react-query.jpg";
+import ReactNext from "@/public/reactNext.png";
+import javascript from "@/public/javascript.jpg";
 
 export const projectList = [
   {
@@ -344,27 +347,31 @@ export const Testimonials = [
 
 export const Blogs = [
   {
-    name: "blog",
-    image: filmflicker,
-    description: "Description description",
+    name: "Optimizing Data Fetching in React with React Query",
+    image: reactQuery,
+    description:
+      "In the world of modern web development, efficient data management is crucial for creating fast, responsive, and scalable applications.",
     url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
   },
   {
-    name: "blog",
-    image: filmflicker,
-    description: "Description description",
-    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+    name: "React vs Next.js: Client-Side and Server-Side Rendering",
+    image: ReactNext,
+    description:
+      "In this,I will cover the major differences between React and Next.js, mainly their difference in data rendering",
+    url: "https://gautham10.hashnode.dev/react-vs-nextjs-navigating-the-terrain-of-client-side-and-server-side-rendering",
   },
   {
-    name: "blog",
-    image: filmflicker,
-    description: "Description description",
-    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+    name: "Behind the Scenes: Understanding JavaScript Code Execution",
+    image: javascript,
+    description:
+      "This article will reveal the mysteries and under the hood JavaScript code execution process.",
+    url: "https://gautham10.hashnode.dev/behind-the-scenes-understanding-javascript-code-execution",
   },
   {
-    name: "blog",
-    image: filmflicker,
-    description: "Description description",
-    url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
+    name: "Exploring the Power of FlatList in React Native: Features, Use Cases and Implementation",
+    image: reactQuery,
+    description:
+      "This article talks about using FlatList for rendering large lists in React Native",
+    url: "https://gautham10.hashnode.dev/exploring-the-power-of-flatlist-in-react-native-features-use-cases-and-implementation",
   },
 ];

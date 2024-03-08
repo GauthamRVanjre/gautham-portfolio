@@ -34,20 +34,20 @@ const BlogCard = ({ blog }: { blog: BlogCardType }) => {
         <div className="p-4">
           <div className="flex justify-between items-center">
             <h3 className="text-xl font-bold my-3 hover:text-violet-500 ">
-              {title}
+              {blog.name}
             </h3>
-            {blog.url && (
-              <a
-                className="rounded bg-green-100  text-green-800 text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
-                href={blog.url}
-                target="_blank"
-              >
-                Live
-              </a>
-            )}
           </div>
 
-          <p className="opacity-80">{blog.description}</p>
+          <p className="opacity-80 pb-4">{blog.description}</p>
+          {blog.url && (
+            <a
+              className="rounded bg-green-100 p-2  text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
+              href={blog.url}
+              target="_blank"
+            >
+              Live
+            </a>
+          )}
         </div>
       </div>
     </Tilt>
