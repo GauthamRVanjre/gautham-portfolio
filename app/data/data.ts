@@ -1,108 +1,108 @@
 import filmflicker from "@/public/filmflicker.png";
-import gamehub from "@/public/gamehub.png";
 import gitops from "@/public/gitops.webp";
 import shadcn from "@/public/shadcn.png";
 import cicd from "@/public/cicd.png";
 import boto3 from "@/public/boto3.jpg";
-import portfolio from "@/public/portfolio.png";
 import kubernetes from "@/public/kubernetes.png";
 import selenium from "@/public/selenium.jpg";
 import htmlcss from "@/public/htmlcss.webp";
+import gadaElectronics from "@/public/gada-electronics.png";
+import eventConnect from "@/public/event-connect-home.png";
+import getFit from "@/public/getFit-Home.jpeg";
 
 export const projectList = [
   {
     id: 1,
     tag: "top",
-    title: "Film Flicker",
-    category: "frontend",
-    image: filmflicker,
-    description:
-      "Movie and Anime Discovery Webapp built using Next App Router.",
+    title: "Gada Electronics",
+    category: "Full Stack",
+    image: gadaElectronics,
+    description: "An Electronics E-Commerce and inventory system",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
       shadcn,
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
     ],
-    url: "https://filmflicker.vercel.app/",
-    github: "https://github.com/ankitrajxd/filmflicker",
+    url: "https://gada-electronics-murex.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/Gada-Electronics",
     detailedDescription:
-      "🎬 FilmFlicker combines sleek design with powerful features, making it easy to navigate and uncover your next favorite movie. Lights, camera, action! 🍿",
+      "It is a system for an online electronics shop, which gives seamless stock inventory updates. The system's automated inventory management ensures a seamless experience for real time updates ",
     features: [
-      "🔍 Searching",
-      "⚡ Filtering by Genre",
-      "🔑  Authentication",
-      "📺 WatchList",
-      "🔮 Recommendations",
+      " Searching and filtering products",
+      " Cart Functionality",
+      " Authentication",
+      "Inventory Management",
     ],
   },
   {
     id: 2,
-    title: "Play Quest",
-    category: "frontend",
-    image: gamehub,
+    tag: "top",
+    title: "Event Connect",
+    category: "Frontend",
+    image: eventConnect,
     description:
-      "Video game discovery platform built with TypeScript and React.js.",
+      "Event Hosting platform allowing users to create and host events",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/playquest",
+    url: "https://event-connect.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/Event-Connect",
     detailedDescription:
-      "GameHub is a streamlined video game discovery platform built with TypeScript and React.js. This project allows users to effortlessly explore and find information about various games.",
+      "Developed an innovative event hosting system, allowing users to create and manage groups by hosting events",
     features: [
-      "🔍  Searching",
-      "⚡ Filtering by Genre",
-      "🔮 AI based recommendation",
-      "📱 Platform filter",
+      "Searching events and groups",
+      "Authentication",
+      "Creating groups and events",
+      "RSVP functionality",
     ],
   },
   {
     id: 3,
     tag: "top",
-    title: "Personal Portfolio",
-    category: "frontend",
-    image: portfolio,
-    description:
-      "Sleek personal portfolio website made with NextJs, ShadcnUI and Framer Motion.",
+    title: "Get Fit",
+    category: "React Native",
+    image: getFit,
+    description: "A mobile application to help you in knowledge of Exercises",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     ],
-    url: "https://ankitraj.vercel.app/",
-    github: "https://github.com/ankitrajxd/personal-portfolio",
+    url: undefined,
+    github: "https://github.com/GauthamRVanjre/GetFit",
     features: [
-      "Sleek and modern design",
-      "Built with Next.js for server-side rendering",
-      "Utilizes Tailwind CSS for responsive styling",
-      "Animated transitions powered by Framer Motion",
+      "Seaching and Filtering",
+      "Built with Cross-platform mobile Technology- React Native",
+      "Utilizes StyleSheet for styling",
+      "Integration With Rest APIs",
     ],
     detailedDescription:
-      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering.",
+      "Create a simple, easy-to-use mobile application to list excerises based on different body parts",
   },
   {
     id: 4,
-    tag: "top",
-    title: "CI CD Pipeline",
-    category: "devops",
+    title: "Homing Estate",
+    category: "FullStack",
     image: cicd,
     description:
-      "CICD Pipeline using Jenkins and docker for deploying Web application.",
+      "A dynamic real-estate marketplace with an intuitive user interface,",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/CICD-PIPELINE-FOR-WEB-APPLICATION",
-    features: [
-      "Automated deployment process",
-      "Integration with Jenkins for continuous integration",
-      "Usage of Docker for containerization",
-    ],
+    url: "https://gilded-pegasus-3e5c57.netlify.app/",
+    github: "https://github.com/GauthamRVanjre/Home-estate-",
+    features: ["Filtering on Buy or Rent", "Add To Favorites", "Sleek UI"],
     detailedDescription:
-      "This project implements a Continuous Integration and Continuous Deployment (CI/CD) pipeline using Jenkins and Docker for deploying web applications. It automates the deployment process and integrates with Jenkins for continuous integration.",
+      "This project involves a dynamic real-estate marketplace featuring an intuitive user interface, enabling users to browse and explore a diverse range of houses with detailed information on each listing",
   },
   {
     id: 5,
@@ -236,13 +236,29 @@ export const skills = [
     name: "React",
   },
   {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    name: "Redux",
+  },
+  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     name: "TailwindCSS",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    name: "Node.js",
   },
 
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
     name: "Prisma",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+    name: "Mongoose",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    name: "Express",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
@@ -267,6 +283,10 @@ export const skills = [
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     name: "Docker",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+    name: "Vercel",
   },
 
   {

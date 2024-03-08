@@ -48,15 +48,6 @@ const ProjectCard = ({
                 {title}
               </h3>
             </Link>
-            {url && (
-              <a
-                className="rounded bg-green-100  text-green-800 text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
-                href={url}
-                target="_blank"
-              >
-                Live
-              </a>
-            )}
           </div>
 
           <p className="opacity-80">{description}</p>
@@ -79,6 +70,17 @@ const ProjectCard = ({
                 </div>
               ))}
             </div>
+          </div>
+          <div className="flex flex-row justify-between mt-4">
+            {url && (
+              <a
+                className="rounded bg-green-100 pt-2  text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
+                href={url}
+                target="_blank"
+              >
+                Live
+              </a>
+            )}
             <a
               href={github}
               target="_blank"

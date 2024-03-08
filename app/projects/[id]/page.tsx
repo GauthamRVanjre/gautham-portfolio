@@ -80,7 +80,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
 
           <div className="flex items-center gap-2">
             <div className="w-[10px] h-[10px] rounded-full bg-[#50E3C2]"></div>
-            <p>{project?.url ? "Live" : "Ready"}</p>
+            <p>{project?.url ? "Live" : "In Progress"}</p>
           </div>
 
           <p className="opacity-50 text-sm mt-4 mb-2">Features</p>
@@ -92,10 +92,6 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
             ))}
           </ul>
         </div>
-      </div>
-      <div className="border rounded-md p-4 my-3">
-        <p className="opacity-50 mb-3">Features</p>
-        wip
       </div>
     </AnimatedDiv>
   );
