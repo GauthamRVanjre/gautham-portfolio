@@ -21,7 +21,7 @@ const NavBar = () => {
           <Link href="/resume">Resume</Link>
         </Button>
 
-        <Button
+        {/* <Button
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
@@ -31,13 +31,13 @@ const NavBar = () => {
           >
             Say Hi!
           </a>
-        </Button>
-        {/* <Button
+        </Button> */}
+        <Button
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
           <Link href="/contactMe">Contact Me</Link>
-        </Button> */}
+        </Button>
       </div>
     </div>
   );

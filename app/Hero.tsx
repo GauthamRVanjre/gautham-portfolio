@@ -28,7 +28,7 @@ const Hero = () => {
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
               {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] "> */}
               <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
-                Gautham,
+                Gautham
               </span>
             </span>{" "}
             <TypewriterEffectSmooth words={words} />

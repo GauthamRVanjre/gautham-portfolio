@@ -1,93 +1,70 @@
 "use client";
-import AnimatedDiv from "../components/AnimatedDiv";
-import { MdOutlineKeyboardBackspace } from "react-icons/md";
-import Link from "next/link";
-import emailjs from "emailjs-com";
-import { useRef, useState } from "react";
+import React from "react";
+import { cn } from "@/utils/cn";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
-const ContactMe = () => {
-  const form = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  function sendEmail(e: any) {
+export default function ContactMe() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // console.log(name, email, message);
+    console.log("Form submitted");
+  };
+  return (
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+        Contact Me
+      </h2>
+      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
+        Hit me up with an message and I will get back to you soon.
+      </p>
 
-    // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+      <form className="my-8" onSubmit={handleSubmit}>
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="firstname">Name</Label>
+          <Input id="firstname" placeholder="John" type="text" />
+        </LabelInputContainer>
 
-    // Create a new object that contains dynamic template params
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: "Gautham Vanjre",
-      message: message,
-    };
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="email">Email Address</Label>
+          <Input id="email" placeholder="JohnDoe@gmail.com" type="email" />
+        </LabelInputContainer>
+        <LabelInputContainer className="mb-8">
+          <Label htmlFor="twitterpassword">Your Message</Label>
+          <Textarea id="twitterpassword" placeholder="Hello Gautham, ..." />
+        </LabelInputContainer>
 
-    console.log(serviceId, templateId, publicKey);
+        <button
+          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+          type="submit"
+        >
+          Sign up &rarr;
+          <BottomGradient />
+        </button>
+      </form>
+    </div>
+  );
+}
 
-    emailjs.send(serviceId!, templateId!, templateParams, publicKey!).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-    // // e.target.reset();
-  }
-
+const BottomGradient = () => {
   return (
     <>
-      <div className="px-[1.2rem] md:px-[9rem] opacity-70">
-        <Link href={"../"}>
-          <MdOutlineKeyboardBackspace
-            className="my-[1.3rem] mt-[2rem]"
-            size={25}
-          />
-        </Link>
-      </div>
-      <AnimatedDiv ClassName="px-[1.2rem] md:px-[9rem] flex flex-col justify-center items-center">
-        <AnimatedDiv ClassName="max-w-[400px]  overflow-hidden flex flex-col ">
-          <h2 className="text-center font-bold text-sm text-[#FF8911] uppercase tracking-wider mb-4">
-            Resume
-          </h2>
-          <p className="text-center text-2xl sm:text-3xl mb-4 font-extrabold">
-            My Resume
-          </p>
-          <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
-            <div className="form-group-total">
-              <form onSubmit={sendEmail} className="emailForm">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <textarea
-                  cols={30}
-                  rows={10}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-                <button type="submit">Send Email</button>
-              </form>
-            </div>
-          </div>
-        </AnimatedDiv>
-      </AnimatedDiv>
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
 };
 
-export default ContactMe;
+const LabelInputContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+      {children}
+    </div>
+  );
+};
