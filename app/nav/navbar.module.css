@@ -1,8 +1,13 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1; /* Ensure it's above other content */
 }
 
 .navbar:before {
@@ -13,7 +18,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  /* background: linear-gradient(26deg, #45caff 41%, #f41bff 47%); */
   background: linear-gradient(
     45deg,
     #e60073 0%,
@@ -24,9 +28,9 @@
     #00ff00 83.33%,
     #0000ff 100%
   );
-  transform: translate3d(0, 50px, 0) scale(0.49);
   height: 150px;
   filter: blur(220px);
+  /* opacity: 0.7; */ /* Adjust opacity if needed */
   opacity: 70%;
   transition: all 0.3s;
   border-radius: inherit;

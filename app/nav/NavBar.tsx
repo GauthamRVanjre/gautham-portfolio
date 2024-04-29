@@ -30,6 +30,12 @@ const NavBar = () => {
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
+          <Link href="#skills">Skills</Link>
+        </Button>
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
           <Link href="#blogs">Blogs</Link>
         </Button>
         <Button
