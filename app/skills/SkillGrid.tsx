@@ -6,7 +6,7 @@ import Skill from "./Skill";
 
 const Skills = () => {
   return (
-    <div className="relative">
+    <div id="skills" className="relative">
       <h2 className="text-center font-bold text-sm text-white-600 uppercase tracking-wider mb-6">
         Skills
       </h2>

@@ -1,8 +1,24 @@
 "use client";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
 const Hero = () => {
+  const words = [
+    {
+      text: "Full",
+    },
+    {
+      text: "Stack",
+    },
+    {
+      text: "Web",
+    },
+    {
+      text: "Developer.",
+    },
+  ];
+
   return (
     <>
       <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
@@ -12,16 +28,17 @@ const Hero = () => {
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
               {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] "> */}
               <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
-                Gautham,
+                Gautham
               </span>
             </span>{" "}
-            A Web{" "}
+            <TypewriterEffectSmooth words={words} />
+            {/* A Web{" "}
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500 dark:text-zinc-400`}
             >
               developer
               <span className="text-[#ff8c66]">.</span>
-            </span>
+            </span> */}
           </motion.h1>
 
           {/* <span className="absolute rounded-full text-[12px] text-white font-bold top-[-2.4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-3">

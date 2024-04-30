@@ -5,7 +5,7 @@ import GithubStats from "./GithubStats";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className=" flex-col items-center">
         <h2
           className={`text-center font-bold text-sm text-white-600 uppercase tracking-wider mb-6`}

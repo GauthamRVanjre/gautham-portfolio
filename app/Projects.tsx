@@ -10,7 +10,7 @@ const Projects = () => {
   const topProjects = projectList.filter((p) => p.tag === "top");
 
   return (
-    <div className="relative">
+    <div id="projects" className="relative">
       <h2 className="text-center font-bold text-sm text-white-600 uppercase tracking-wider mb-6">
         Projects
       </h2>

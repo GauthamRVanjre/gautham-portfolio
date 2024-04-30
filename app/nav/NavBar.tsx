@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { DarkModeSwitch } from "./DarkModeSwitch";
+import { Tooltip } from "react-tooltip";
 
 const NavBar = () => {
   return (
@@ -13,7 +14,36 @@ const NavBar = () => {
         GV
       </Link>
       <div className="flex gap-2 relative">
-        <DarkModeSwitch />
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
+          <Link href="#workExperience">Work Experience</Link>
+        </Button>
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
+          <Link href="#projects">Projects</Link>
+        </Button>
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
+          <Link href="#skills">Skills</Link>
+        </Button>
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
+          <Link href="#blogs">Blogs</Link>
+        </Button>
+        <Button
+          size={"sm"}
+          className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
+        >
+          <Link href="#about">About Me</Link>
+        </Button>
         <Button
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
@@ -21,7 +51,7 @@ const NavBar = () => {
           <Link href="/resume">Resume</Link>
         </Button>
 
-        <Button
+        {/* <Button
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
@@ -31,13 +61,15 @@ const NavBar = () => {
           >
             Say Hi!
           </a>
-        </Button>
-        {/* <Button
+        </Button> */}
+        <Button
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
           <Link href="/contactMe">Contact Me</Link>
-        </Button> */}
+        </Button>
+
+        <DarkModeSwitch />
       </div>
     </div>
   );
