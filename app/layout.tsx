@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "./nav/NavBar";
 import AnimatedDiv from "./components/AnimatedDiv";
+import { Toaster } from "react-hot-toast";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} ${protest.variable}`}>
+        <Toaster />
         <AnimatedDiv>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader

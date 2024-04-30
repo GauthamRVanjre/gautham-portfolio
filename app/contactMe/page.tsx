@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import toast from "react-hot-toast";
 
 export default function ContactMe() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -39,6 +40,10 @@ export default function ContactMe() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
+    try {
+    } catch (error) {
+      toast.error("Something went wrong");
+    }
   }
 
   return (
