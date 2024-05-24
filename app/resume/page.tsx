@@ -1,4 +1,4 @@
-import GauthamResume from "@/public/gautham_resume.png";
+import gauthamResume from "@/public/gautham_resume.png";
 import Image from "next/image";
 import AnimatedDiv from "../components/AnimatedDiv";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
@@ -26,7 +26,7 @@ const ResumePage = () => {
             My Resume
           </p>
           <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
-            <Image src={GauthamResume} alt="myresume" className="rounded-md" />
+            <Image src={gauthamResume} alt="myresume" className="rounded-md" />
           </div>
           <a href={"../../gautham_2023_grad.pdf"} target="_blank" download>
             <Button size={"sm"} variant={"outline"} className="my-3">
