@@ -1,4 +1,3 @@
-import ankitresume from "@/public/ankitresume.png";
 import GauthamResume from "@/public/gautham_resume.png";
 import Image from "next/image";
 import AnimatedDiv from "../components/AnimatedDiv";
