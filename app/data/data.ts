@@ -41,7 +41,7 @@ export const projectList = [
     tag: "top",
     title: "Summarize GPT",
     category: "Full Stack",
-    // image: gadaElectronics,
+    image: gadaElectronics,
     description:
       "In progress project. My aim is to summarize blogs for end user, when they paste the URL of the blog",
     tech: [
