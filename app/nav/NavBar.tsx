@@ -4,6 +4,7 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { Tooltip } from "react-tooltip";
+import { FiDownload } from "react-icons/fi";
 
 const NavBar = () => {
   return (
@@ -48,7 +49,13 @@ const NavBar = () => {
           size={"sm"}
           className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
         >
-          <Link href="/resume">Resume</Link>
+          {/* <Link href="/resume">Resume</Link> */}
+          <a href={"../../gautham_Software_engineer.pdf"} target="_blank">
+            <Button size={"sm"} variant={"outline"} className="my-3">
+              <FiDownload className="mr-2" />
+              Resume
+            </Button>
+          </a>
         </Button>
 
         {/* <Button

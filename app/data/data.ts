@@ -1,26 +1,95 @@
-import filmflicker from "@/public/filmflicker.png";
-import gitops from "@/public/gitops.webp";
 import shadcn from "@/public/shadcn.png";
 import cicd from "@/public/cicd.png";
-import boto3 from "@/public/boto3.jpg";
-import kubernetes from "@/public/kubernetes.png";
-import selenium from "@/public/selenium.jpg";
-import htmlcss from "@/public/htmlcss.webp";
 import gadaElectronics from "@/public/gada-electronics.png";
 import eventConnect from "@/public/event-connect-home.png";
 import getFit from "@/public/getFit-Home.jpeg";
 import reactQuery from "@/public/react-query.jpg";
 import ReactNext from "@/public/reactNext.png";
 import javascript from "@/public/javascript.jpg";
+import thecrownSociety from "@/public/thecrownsocitey.png";
+import ainftMinter from "@/public/ai_nft_dapp.png";
 
 export const projectList = [
   {
     id: 1,
     tag: "top",
+    title: "The Crown Society",
+    category: "Full Stack",
+    image: thecrownSociety,
+    description:
+      "A project built for a freelance client. The site is used by 25+ active users daily and 70+ registered users",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      shadcn,
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    ],
+    url: "https://www.thecrownsociety.in/",
+    github: "https://github.com/GauthamRVanjre/crown-app",
+    detailedDescription:
+      "A project built for a freelance client. The site is used by 25+ active users daily and 70+ registered users",
+    features: [
+      " Searching and filtering users and investments",
+      " Authentication",
+      "Customer Data keeping store",
+    ],
+  },
+  {
+    id: 2,
+    tag: "top",
+    title: "Summarize GPT",
+    category: "Full Stack",
+    image: gadaElectronics,
+    description:
+      "In progress project. My aim is to summarize blogs for end user, when they paste the URL of the blog",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      shadcn,
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    ],
+    // url: "https://www.thecrownsociety.in/",
+    github: "https://github.com/GauthamRVanjre/SummarizeGPT",
+    detailedDescription:
+      "My aim is to summarize blogs for end user, when they paste the URL of the blog",
+    features: [
+      "Payment Gateway integration",
+      " Authentication",
+      "Customer blog history",
+    ],
+  },
+  {
+    id: 3,
+    tag: "top",
+    title: "AI NFT Minting Dapp",
+    category: "Full Stack",
+    image: ainftMinter,
+    description:
+      "This AI NFT minting platform allows users to generate images through prompts to AI and mint them as NFTs",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    ],
+    url: "https://ai-nft-minting-dapp.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/AI-NFT-Minting-dapp",
+    detailedDescription:
+      "This AI NFT minting platform allows users to generate images through prompts to AI and mint them as NFTs",
+    features: ["Smart contract blockchain layer", "Hugging face integration"],
+  },
+  {
+    id: 4,
+    tag: "top",
     title: "Gada Electronics",
     category: "Full Stack",
     image: gadaElectronics,
-    description: "An Electronics E-Commerce and inventory system",
+    description:
+      "An Electronics E-Commerce and inventory system. It is a system for an online electronics shop, giving seamless stock updates",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -42,8 +111,7 @@ export const projectList = [
     ],
   },
   {
-    id: 2,
-    tag: "top",
+    id: 5,
     title: "Event Connect",
     category: "Frontend",
     image: eventConnect,
@@ -67,8 +135,7 @@ export const projectList = [
     ],
   },
   {
-    id: 3,
-    tag: "top",
+    id: 6,
     title: "Get Fit",
     category: "React Native",
     image: getFit,
@@ -89,7 +156,7 @@ export const projectList = [
       "Create a simple, easy-to-use mobile application to list excerises based on different body parts",
   },
   {
-    id: 4,
+    id: 7,
     title: "Homing Estate",
     category: "FullStack",
     image: cicd,
@@ -106,104 +173,6 @@ export const projectList = [
     features: ["Filtering on Buy or Rent", "Add To Favorites", "Sleek UI"],
     detailedDescription:
       "This project involves a dynamic real-estate marketplace featuring an intuitive user interface, enabling users to browse and explore a diverse range of houses with detailed information on each listing",
-  },
-  {
-    id: 5,
-    title: "GitOps Implementation",
-    category: "devops",
-    image: gitops,
-    description: "Implemented GitOps on a Web app using Argo CD.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
-    ],
-    url: undefined,
-    github: "#",
-    features: [
-      "GitOps implementation for managing infrastructure",
-      "Usage of Argo CD for continuous delivery",
-      "Integration with Kubernetes for container orchestration",
-    ],
-    detailedDescription:
-      "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
-  },
-  {
-    id: 6,
-    title: "Infrastructure Automation with IaC and AWS Boto3",
-    category: "devops",
-    image: boto3,
-    description: " Automated repeated tasks in AWS cloud using AWS BOTO3.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/aws-boto-python",
-    features: [
-      "Automation of repetitive tasks in AWS cloud environment",
-      "Usage of AWS Boto3 library for scripting in Python",
-      "Improvement of operational efficiency in AWS environment",
-    ],
-    detailedDescription:
-      "This project automates repetitive tasks in the AWS cloud environment using the AWS Boto3 library in Python. It enhances operational efficiency by scripting common tasks, such as provisioning resources and managing configurations.",
-  },
-  {
-    id: 7,
-    title: "Search Query Automation Using Selenium",
-    category: "devops",
-    image: selenium,
-    description: "Automated Searching List of Search Strings on Google",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/browser-search-automation",
-    features: ["Automated Search", "Support for all browsers."],
-    detailedDescription:
-      "This project automates searching keywords on search engine automatically with user authentication.",
-  },
-  {
-    id: 8,
-    tag: "top",
-    title: "Microservice Deployment on K8s",
-    category: "devops",
-    image: kubernetes,
-    description: "Deployed a 10-tier microservice app on kuberentes.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/K8s-cluster-bootstrap",
-    features: [
-      "Automated Kubernetes cluster provisioning and management using Kubeadm",
-      "Integration with DigitalOcean for scalable infrastructure deployment",
-      "Improvement of operational efficiency in Kubernetes cluster management",
-    ],
-    detailedDescription:
-      "This project automates the provisioning and management of Kubernetes clusters using Kubeadm. It integrates with DigitalOcean for scalable infrastructure deployment and enhances operational efficiency in Kubernetes cluster management.",
-  },
-  {
-    id: 9,
-    title: "HTML Landing Pages",
-    category: "frontend",
-    image: htmlcss,
-    description: "List of Static Pages made with html and vanilla css",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/ankitrajxd/html-css-projects",
-    features: ["Responsive"],
-    detailedDescription:
-      "Curated repository of HTML, CSS, and SCSS projects showcasing my web development journey.",
   },
 ];
 
