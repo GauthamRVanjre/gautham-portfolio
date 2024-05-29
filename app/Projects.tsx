@@ -7,7 +7,7 @@ import Link from "next/link";
 import ProjectGrid from "./components/ProjectGrid";
 
 const Projects = () => {
-  const topProjects = projectList.filter((p) => p.tag === "top");
+  const topProjects = projectList.filter((project) => project.tag === "top");
 
   return (
     <div id="projects" className="relative">

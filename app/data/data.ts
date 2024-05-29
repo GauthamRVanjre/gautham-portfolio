@@ -155,25 +155,25 @@ export const projectList = [
     detailedDescription:
       "Create a simple, easy-to-use mobile application to list excerises based on different body parts",
   },
-  {
-    id: 7,
-    title: "Homing Estate",
-    category: "FullStack",
-    image: cicd,
-    description:
-      "A dynamic real-estate marketplace with an intuitive user interface,",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-    ],
-    url: "https://gilded-pegasus-3e5c57.netlify.app/",
-    github: "https://github.com/GauthamRVanjre/Home-estate-",
-    features: ["Filtering on Buy or Rent", "Add To Favorites", "Sleek UI"],
-    detailedDescription:
-      "This project involves a dynamic real-estate marketplace featuring an intuitive user interface, enabling users to browse and explore a diverse range of houses with detailed information on each listing",
-  },
+  // {
+  //   id: 7,
+  //   title: "Homing Estate",
+  //   category: "FullStack",
+  //   image: ,
+  //   description:
+  //     "A dynamic real-estate marketplace with an intuitive user interface,",
+  //   tech: [
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  //   ],
+  //   url: "https://gilded-pegasus-3e5c57.netlify.app/",
+  //   github: "https://github.com/GauthamRVanjre/Home-estate-",
+  //   features: ["Filtering on Buy or Rent", "Add To Favorites", "Sleek UI"],
+  //   detailedDescription:
+  //     "This project involves a dynamic real-estate marketplace featuring an intuitive user interface, enabling users to browse and explore a diverse range of houses with detailed information on each listing",
+  // },
 ];
 
 //////////////////////////////
