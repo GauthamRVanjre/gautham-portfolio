@@ -323,11 +323,11 @@ export const Blogs = [
     url: "https://gautham10.hashnode.dev/optimizing-data-fetching-in-react-with-react-query",
   },
   {
-    name: "React vs Next.js: Client-Side and Server-Side Rendering",
+    name: "Building Multilingual Applications in Next 14 using next-intl",
     image: ReactNext,
     description:
-      "In this,I will cover the major differences between React and Next.js, mainly their difference in data rendering",
-    url: "https://gautham10.hashnode.dev/react-vs-nextjs-navigating-the-terrain-of-client-side-and-server-side-rendering",
+      "In this blog, we discuss about how we can build application which support multiple languages using a library called next-intl",
+    url: "https://gautham10.hashnode.dev/building-multilingual-apps-in-next-14-using-next-intl",
   },
   {
     name: "Behind the Scenes: Understanding JavaScript Code Execution",
