@@ -326,7 +326,7 @@ export const Blogs = [
     name: "Building Multilingual Applications in Next 14 using next-intl",
     image: ReactNext,
     description:
-      "In this blog, we discuss about how we can build application which support multiple languages using a library called next-intl",
+      "In this blog, we discuss about building application which support multiple languages using a library called next-intl",
     url: "https://gautham10.hashnode.dev/building-multilingual-apps-in-next-14-using-next-intl",
   },
   {
