@@ -20,7 +20,7 @@ const NavBar = () => {
         GV
       </Link>
       <div className="relative groupNav">
-        <div className={`md:flex gap-2  hidden`}>
+        <div className={`md:flex gap-2  flex flex-row`}>
           {pathName === "/" && (
             <>
               <div className="relative group mt-1">
