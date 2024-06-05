@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`${styles.navbar} flex justify-between md:my-6 px-2 sm:px-[2rem] lg:px-[9rem]`}
+      className={`${styles.navbar} flex justify-between my-2 md:my-6 px-2 sm:px-[2rem] lg:px-[9rem]`}
     >
       <Link href={"/"} className="font-extrabold font-protest text-3xl">
         GV
