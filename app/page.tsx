@@ -15,9 +15,7 @@ export default function Home() {
       <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0 ">
         <Hero />
       </div>
-      <div className="my-[3rem]">
-        <InfiniteMarquee />
-      </div>
+      <div className="my-[3rem]">{/* <InfiniteMarquee /> */}</div>
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
         <Skills />
       </div>

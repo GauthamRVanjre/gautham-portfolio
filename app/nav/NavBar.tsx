@@ -6,6 +6,7 @@ import Link from "next/link";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { FiDownload } from "react-icons/fi";
 import { usePathname } from "next/navigation";
+import AIChatBoxButton from "../components/AIChatBoxButton";
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -78,6 +79,7 @@ const NavBar = () => {
           >
             <Link href="/contactMe">Contact Me</Link>
           </Button>
+          <AIChatBoxButton />
 
           <DarkModeSwitch />
         </div>
