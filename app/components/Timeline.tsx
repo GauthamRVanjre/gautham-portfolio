@@ -11,7 +11,7 @@ import AnimatedDiv from "./AnimatedDiv";
 const Timeline = () => {
   const Education = [
     {
-      Date: "February, 2024 - Present",
+      Date: "February, 2024 - April, 2024",
       title: "TezIndia BuilderCamp 2.0",
       Company: "Tezos",
       location: "Remote",
@@ -20,7 +20,7 @@ const Timeline = () => {
       bg: "#F57D1F",
     },
     {
-      Date: "September, 2023 - Present",
+      Date: "September, 2023 - May, 2024",
       title: "Jr. Full Stack Developer",
       Company: "Alphabi Solutions",
       location: "Remote",
