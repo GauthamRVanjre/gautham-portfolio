@@ -31,7 +31,7 @@ const AIChatBox: React.FC<AIChatBoxProps> = ({ onClose, open }) => {
     setLoading(false);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     // adding input text to messages state
