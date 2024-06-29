@@ -57,3 +57,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+.user-message {
+  text-align: right;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #766b6b;
+  background-color: #766b6b;
+  align-self: flex-end;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.model-message {
+  text-align: left;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #1e1c1c;
+  background-color: #1e1c1c;
+  align-self: flex-start;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
