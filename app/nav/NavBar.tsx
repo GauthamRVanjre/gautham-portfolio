@@ -65,12 +65,16 @@ const NavBar = () => {
             className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
           >
             {/* <Link href="/resume">Resume</Link> */}
-            <a href={"../../gautham_Software_engineer.pdf"} target="_blank">
-              <Button size={"sm"} variant={"outline"} className="my-3">
-                <FiDownload className="mr-2" />
-                Resume
-              </Button>
-            </a>
+            <Link
+              className="flex flex-row"
+              href={"../../gautham_Software_engineer.pdf"}
+              target="_blank"
+            >
+              <FiDownload className="mr-2" />
+              Resume
+              {/* <Button size={"sm"} variant={"outline"} className="my-3">
+              </Button> */}
+            </Link>
           </Button>
 
           <Button
