@@ -53,32 +53,20 @@ const AIChatBox: React.FC<AIChatBoxProps> = ({ onClose, open }) => {
       <div className="flex h-[600px] p-4 flex-col rounded bg-background border shadow-xl">
         <div className="h-full overflow-y-scroll">
           {messages &&
-            messages.map((message, index) => {
-              if (!loading) {
-                return (
-                  <div className="chat-container" key={index}>
-                    {message.role === "user" ? (
-                      <p className="user-message">{message.text}</p>
-                    ) : (
-                      <p className="model-message">{message.text}</p>
-                    )}
-                  </div>
-                );
-              } else {
-                return (
-                  <div className="chat-container" key={index}>
-                    {message.role === "user" ? (
-                      <p className="user-message">{message.text}</p>
-                    ) : (
-                      <p className="model-message">{message.text}</p>
-                    )}
-                    <div>
-                      <FiLoader />
-                    </div>
-                  </div>
-                );
-              }
-            })}
+            messages.map((message, index) => (
+              <div className="chat-container" key={index}>
+                {message.role === "user" ? (
+                  <p className="user-message">{message.text}</p>
+                ) : (
+                  <p className="model-message">{message.text}</p>
+                )}
+              </div>
+            ))}
+          {loading && (
+            <div>
+              <FiLoader />
+            </div>
+          )}
         </div>
         {/* onSubmit={handleSubmit} */}
         <form onSubmit={handleSubmit} className="m-3 flex gap-1">
