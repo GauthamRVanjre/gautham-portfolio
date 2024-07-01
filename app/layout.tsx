@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from "@vercel/analytics/react";
 import NavBar from "./nav/NavBar";
 import AnimatedDiv from "./components/AnimatedDiv";
 import { Toaster } from "react-hot-toast";
@@ -38,6 +39,7 @@ export default function RootLayout({
 
             <NavBar />
             {children}
+            <Analytics />
             <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
               <p>Copyright &copy; 2024 Gautham Vanjre. All Rights Reserved. </p>
               <p>Designed by Me Built with NextJS.</p>
