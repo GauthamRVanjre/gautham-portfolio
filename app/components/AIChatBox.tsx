@@ -46,7 +46,7 @@ const AIChatBox: React.FC<AIChatBoxProps> = ({ onClose, open }) => {
         open ? "fixed" : "hidden"
       }`}
     >
-      <button onClick={onClose} className="mb-1 mx-auto block mr-32">
+      <button onClick={onClose} className="mb-1 mx-auto block mr-4">
         <IoIosCloseCircle size={30} />
       </button>
 
