@@ -6,7 +6,7 @@ const AIChatBoxButton = () => {
   const [chatBoxOpen, setChatBoxOpen] = useState(false);
   return (
     <>
-      <Button onClick={() => setChatBoxOpen(true)}>Chat Button</Button>
+      <Button onClick={() => setChatBoxOpen(true)}>AI chat</Button>
       <AIChatBox open={chatBoxOpen} onClose={() => setChatBoxOpen(false)} />
     </>
   );
