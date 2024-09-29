@@ -51,7 +51,7 @@ const AIChatBox: React.FC<AIChatBoxProps> = ({ onClose, open }) => {
       </button>
 
       <div className="flex h-[600px] p-4 flex-col rounded bg-background border shadow-xl">
-        <div className="h-full overflow-y-scroll">
+        <div className="h-full overflow-y-scroll overflow-x-hidden">
           {messages &&
             messages.map((message, index) => (
               <div className="chat-container" key={index}>

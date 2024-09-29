@@ -78,6 +78,7 @@
   align-self: flex-start;
   margin-right: auto;
   border-radius: 10px;
+  max-width: 420px;
 }
 .chat-container {
   display: flex;
