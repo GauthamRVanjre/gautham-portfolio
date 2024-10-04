@@ -19,11 +19,13 @@ const NavBar = () => {
         GV
       </Link>
       <div className="relative groupNav">
-        <div className={`md:flex md:gap-2  flex flex-row`}>
+        <div
+          className={`md:flex ${styles.navLinks} md:flex-row md:gap-2  flex flex-row`}
+        >
           {pathName === "/" && (
             <>
               <div className="relative group mt-1">
-                <div className=" cursor-pointer">Services</div>
+                <div className=" cursor-pointer">Sections</div>
                 <div className="hidden group-hover:block absolute bg-white dark:bg-gray-800 mt-2 p-2 rounded shadow-lg">
                   <Button
                     size={"sm"}
@@ -60,11 +62,10 @@ const NavBar = () => {
             </>
           )}
 
-          <Button
+          {/* <Button
             size={"sm"}
             className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white"
           >
-            {/* <Link href="/resume">Resume</Link> */}
             <Link
               className="flex flex-row"
               href={"../../gautham_Software_engineer.pdf"}
@@ -72,10 +73,8 @@ const NavBar = () => {
             >
               <FiDownload className="mr-2" />
               Resume
-              {/* <Button size={"sm"} variant={"outline"} className="my-3">
-              </Button> */}
             </Link>
-          </Button>
+          </Button> */}
 
           <Button
             size={"sm"}
