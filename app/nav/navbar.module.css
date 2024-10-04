@@ -40,6 +40,9 @@
   .navbar:before {
     top: 2rem;
   }
+  .navLinks {
+    flex-direction: column;
+  }
 }
 
 .navbar:after {
