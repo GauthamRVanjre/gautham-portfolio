@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import React, { useEffect, useState } from "react";
 import { FiLoader } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
+import { errorMessage } from "../data/data";
 
 interface AIChatBoxProps {
   open: boolean;
@@ -16,11 +17,16 @@ const AIChatBox: React.FC<AIChatBoxProps> = ({ onClose, open }) => {
 
   const getModelResponse = async () => {
     setLoading(true);
-    const response = await fetch("/api/aiChatBot", {
-      method: "POST",
-      body: JSON.stringify({ message: input }),
-    });
-    const data = await response.json();
+    let data;
+    try {
+      const response = await fetch("/api/aiChatBot", {
+        method: "POST",
+        body: JSON.stringify({ message: input }),
+      });
+      data = await response.json();
+    } catch (error) {
+      data = errorMessage;
+    }
 
     setMessage([
       ...messages,

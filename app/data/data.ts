@@ -344,3 +344,5 @@ export const Blogs = [
     url: "https://gautham10.hashnode.dev/exploring-the-power-of-flatlist-in-react-native-features-use-cases-and-implementation",
   },
 ];
+
+export const errorMessage = "Something went wrong! try again later";
