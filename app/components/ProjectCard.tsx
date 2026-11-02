@@ -32,7 +32,7 @@ const ProjectCard = ({
       glareBorderRadius="7px"
       className="h-fit"
     >
-      <div className="overflow-hidden border  dark:border-0 rounded-lg dark:bg-zinc-900">
+      <div className="project-card overflow-hidden border rounded-lg">
         <Link href={`/projects/${id}`}>
           <Image
             className="object-cover md:h-[180px]"
@@ -41,7 +41,7 @@ const ProjectCard = ({
           />
         </Link>
 
-        <div className="p-4">
+        <div className="project-card-content p-4">
           <div className="flex justify-between items-center">
             <Link href={`/projects/${id}`}>
               <h3 className="text-xl font-bold my-3 hover:text-violet-500 ">

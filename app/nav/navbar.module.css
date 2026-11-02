@@ -1,57 +1,102 @@
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 10rem;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: 5rem;
+  padding: 0 1.5rem;
+  background: var(--site-nav-bg);
+  border-bottom: 1px solid var(--site-border);
+  backdrop-filter: blur(20px);
+}
+
+.navInner {
+  width: min(100%, 1160px);
+  height: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 4;
+  justify-content: space-between;
+  gap: 1.25rem;
 }
 
-.navbar:before {
-  content: "";
-  z-index: 4;
-  position: absolute;
-  top: -25%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 150px;
-  filter: blur(220px);
-  opacity: 70%;
-  transition: all 0.3s;
-  border-radius: inherit;
+.brand {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--site-border);
+  border-radius: 0.75rem;
+  background: var(--site-surface-high);
+  color: var(--site-accent);
+  font-family: var(--font-protest), sans-serif;
+  font-size: 1.15rem;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar:before {
-    top: 2rem;
+.navLinks,
+.navActions {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  gap: 0.2rem;
+  padding: 0.35rem;
+  border: 1px solid var(--site-border);
+  border-radius: 999px;
+  background: var(--site-surface);
+}
+
+.navLinks a {
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  color: var(--site-muted);
+  font-size: 0.8rem;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.navLinks a:hover {
+  background: var(--site-surface-raised);
+  color: var(--site-accent);
+}
+
+.navActions {
+  gap: 0.65rem;
+}
+
+.contactLink {
+  padding: 0.6rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--site-accent), transparent 55%);
+  border-radius: 999px;
+  background: var(--site-accent-soft, rgb(3 105 161 / 9%));
+  color: var(--site-accent);
+  font-size: 0.8rem;
+  transition: background 160ms ease;
+}
+
+.contactLink:hover {
+  background: color-mix(in srgb, var(--site-accent), transparent 85%);
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    height: 4.25rem;
+    padding: 0 1rem;
   }
+
+  .navInner {
+    gap: 0.6rem;
+  }
+
   .navLinks {
-    flex-direction: column;
+    display: none;
   }
-}
 
-.navbar::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  background: linear-gradient(
-    45deg,
-    #e60073 0%,
-    #ff1493 16.66%,
-    #ff4500 33.33%,
-    #ff8c00 50%,
-    #ffd700 66.66%,
-    #00ff00 83.33%,
-    #0000ff 100%
-  );
-  border-radius: 0 0 8px 8px;
-  z-index: 4;
+  .navActions {
+    gap: 0.4rem;
+  }
+
+  .contactLink {
+    padding: 0.5rem 0.75rem;
+  }
 }

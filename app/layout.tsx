@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
 import NextTopLoader from "nextjs-toploader";
 import { Analytics } from "@vercel/analytics/react";
 import NavBar from "./nav/NavBar";
 import AnimatedDiv from "./components/AnimatedDiv";
-import { Toaster } from "react-hot-toast";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -26,25 +24,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${poppins.className} ${protest.variable}`}>
-        <Toaster />
         <AnimatedDiv>
-          <ThemeProvider attribute="class" defaultTheme="dark">
-            <NextTopLoader
-              color={
-                "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
-              }
-            />
+          <NextTopLoader color="#38bdf8" />
 
-            <NavBar />
-            {children}
-            <Analytics />
-            <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
-              <p>Copyright &copy; 2024 Gautham Vanjre. All Rights Reserved. </p>
-              <p>Designed by Me Built with NextJS.</p>
-            </div>
-          </ThemeProvider>
+          <NavBar />
+          {children}
+          <Analytics />
+          <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
+            <p>Copyright &copy; 2024 Gautham Vanjre. All Rights Reserved. </p>
+            <p>Designed by Me Built with NextJS.</p>
+          </div>
         </AnimatedDiv>
       </body>
     </html>
