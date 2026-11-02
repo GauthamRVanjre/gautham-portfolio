@@ -184,7 +184,7 @@ html:not(.dark) .contact-section {
 
 html:not(.dark) .contact-form {
   border-color: var(--site-border);
-  background: var(--site-surface) !important;
+  background: var(--site-surface);
 }
 
 .portfolio-main {
@@ -418,6 +418,10 @@ html:not(.dark) .contact-form {
   color: var(--site-text);
 }
 
+.project-card-title:hover {
+  color: var(--site-accent);
+}
+
 .project-card-content p,
 .blog-card-content p {
   color: var(--site-muted);
@@ -514,15 +518,6 @@ html:not(.dark) .contact-form {
 .blog-card-content p {
   margin: 0;
   padding-bottom: 0.4rem;
-}
-
-.blog-card-content > a {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.2rem 0 !important;
-  background: transparent !important;
-  color: var(--site-accent) !important;
-  font-size: 0.7rem !important;
 }
 
 .about-section > p {
@@ -622,8 +617,8 @@ html:not(.dark) .contact-form {
 
 .contact-form {
   border: 1px solid var(--site-border);
-  border-radius: 1rem !important;
-  background: var(--site-surface) !important;
+  border-radius: 1rem;
+  background: var(--site-surface);
 }
 
 .contact-form input {
@@ -639,7 +634,7 @@ html:not(.dark) .contact-form {
 
 .contact-form button[type="submit"] {
   border: 1px solid color-mix(in srgb, var(--site-accent-strong), transparent 25%);
-  background: var(--site-accent-strong) !important;
+  background: var(--site-accent-strong);
   color: var(--site-accent-contrast);
   transition: filter 160ms ease, transform 160ms ease;
 }
@@ -649,61 +644,56 @@ html:not(.dark) .contact-form {
   transform: translateY(-1px);
 }
 
-.vertical-timeline::before {
-  background: var(--site-border) !important;
+.portfolio-section .vertical-timeline::before {
+  background: var(--site-border);
 }
 
-.vertical-timeline-element-icon {
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-icon {
+  border: 1px solid color-mix(in srgb, var(--site-accent), transparent 55%);
+  background: var(--site-accent-soft);
+  box-shadow: 0 0 0 4px var(--site-bg), inset 0 0 0 1px var(--site-border);
+}
+
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content {
   border: 1px solid var(--site-border);
-  background: var(--site-surface-high) !important;
-  box-shadow: 0 0 0 4px var(--site-bg), inset 0 0 0 1px var(--site-border) !important;
-}
-
-.vertical-timeline-element-content {
-  border: 1px solid var(--site-border);
-  background: var(--site-surface) !important;
-  box-shadow: none !important;
-  color: var(--site-text) !important;
-}
-
-.vertical-timeline-element-content-arrow {
-  border-right-color: var(--site-surface) !important;
-}
-
-.vertical-timeline-element-content h3,
-.vertical-timeline-element-content h4,
-.vertical-timeline-element-content p {
+  background: var(--site-surface);
+  box-shadow: none;
   color: var(--site-text);
 }
 
-.vertical-timeline-element-date {
-  color: var(--site-subtle) !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.7rem !important;
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content-arrow {
+  border-right-color: var(--site-surface);
 }
 
-.vertical-timeline-element-content h3 {
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content h3,
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content h4,
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content p {
+  color: var(--site-text);
+}
+
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-date {
+  color: var(--site-subtle);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+}
+
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content h3 {
   font-size: 1rem;
   font-weight: 600;
 }
 
-.vertical-timeline-element-content h4 {
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content h4 {
   margin-top: 0.25rem;
-  color: var(--site-accent) !important;
+  color: var(--site-accent);
   font-size: 0.78rem;
 }
 
-.vertical-timeline-element-content p {
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content p {
   font-size: 0.84rem;
   line-height: 1.65;
 }
 
-.vertical-timeline-element-icon {
-  border-color: color-mix(in srgb, var(--site-accent), transparent 55%);
-  background: var(--site-accent-soft) !important;
-}
-
-.vertical-timeline-element-icon::before {
+.portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-icon::before {
   color: var(--site-accent);
 }
 
@@ -793,8 +783,8 @@ html:not(.dark) .contact-form {
     padding-top: 6rem;
   }
 
-  .vertical-timeline-element-content {
-    padding: 1rem !important;
+  .portfolio-section .vertical-timeline .vertical-timeline-element .vertical-timeline-element-content {
+    padding: 1rem;
   }
 
   .vertical-timeline-element-date {
@@ -864,6 +854,8 @@ html:not(.dark) .contact-form {
   right: 1.25rem;
   display: inline-flex;
   align-items: center;
+  padding: 0.2rem 0;
+  background: transparent;
   gap: 0.35rem;
   transform: translateY(-50%);
   color: var(--site-accent);
@@ -1084,8 +1076,8 @@ html:not(.dark) .contact-form {
   margin: 0;
   padding: clamp(1.1rem, 2.5vw, 1.65rem);
   border-color: var(--site-border);
-  border-radius: 0.85rem !important;
-  background: var(--site-bg) !important;
+  border-radius: 0.85rem;
+  background: var(--site-bg);
 }
 
 .contact-form-heading .section-kicker {

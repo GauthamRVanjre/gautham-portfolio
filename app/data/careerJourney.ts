@@ -4,7 +4,6 @@ export interface CareerJourneyEntry {
   Company: string;
   location: string;
   description: string;
-  bg: string;
   skills?: string[];
 }
 
@@ -21,7 +20,6 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
     location: "Bengaluru, India",
     description:
       "Collaborating with a team of developers to build interactive and responsive UI components using React.js and Ant Design. Work closely with backend engineers to integrate APIs seamlessly into the application using GraphQL, ensuring efficient data flow and performance. Contribute to backend development using the Django framework, broadening my technical expertise and supporting a full-stack development approach.",
-    bg: "#387ADF",
     skills: ["React", "FastAPI", "GraphQL", "AWS", "Gen AI"],
   },
   {
@@ -31,7 +29,6 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
     location: "Remote",
     description:
       "Learnt and got exposed to Tezos Blockchain and building Dapps and smart contracts on it",
-    bg: "#F57D1F",
     skills: ["Python", "Next.js", "Smart contract", "NumPy"],
   },
   {
@@ -41,7 +38,6 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
     location: "Remote",
     description:
       "Contributed to the development and maintenance of an inventory system for a construction company Implemented user authentication for authorized access to head and site offices ",
-    bg: "#F11A7B",
     skills: ["Next.js", "Prisma", "MongoDB", "Tailwind CSS"],
   },
   {
@@ -51,7 +47,6 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
     location: "Remote",
     description:
       "Collabrated and Contributed to cutting-edge applications for a leading Labsfranchisor. Spearheaded the Franchisor platform, enhancing operational efficiency by 20%.",
-    bg: "#387ADF",
     skills: ["Next.js", "Prisma", "MongoDB", "Tailwind CSS"],
   },
   {
@@ -60,6 +55,5 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
     Company: "Dayanand Sagar College of Engineering",
     location: "Bengaluru, India",
     description: "Learnt core computer science subjects like DBMS,OS,Java",
-    bg: "#F57D1F",
   },
 ];

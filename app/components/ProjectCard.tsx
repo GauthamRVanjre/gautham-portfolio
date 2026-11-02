@@ -44,7 +44,7 @@ const ProjectCard = ({
         <div className="project-card-content p-4">
           <div className="flex justify-between items-center">
             <Link href={`/projects/${id}`}>
-              <h3 className="text-xl font-bold my-3 hover:text-violet-500 ">
+              <h3 className="project-card-title text-xl font-bold my-3">
                 {title}
               </h3>
             </Link>

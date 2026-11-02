@@ -18,9 +18,6 @@ const Timeline = () => {
             key={i}
             visible={true}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: e.bg, color: "#fff" }}
-            contentArrowStyle={{ borderRight: `7px solid  ${e.bg}` }}
-            iconStyle={{ background: e.bg, color: "#fff" }}
           >
             <div className="timeline-heading">
               <h3 className="vertical-timeline-element-title">{e.title}</h3>
