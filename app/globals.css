@@ -113,27 +113,16 @@ body {
   color: var(--site-text);
 }
 
-html:not(.dark) .hero-eyebrow,
 html:not(.dark) .section-kicker {
   color: var(--site-accent);
 }
 
-html:not(.dark) .hero-title,
 html:not(.dark) .portfolio-section > .section-title,
 html:not(.dark) .about-section .section-title,
 html:not(.dark) .contact-title {
   color: var(--site-text);
 }
 
-html:not(.dark) .hero-title span {
-  color: var(--site-accent-strong);
-}
-
-html:not(.dark) .hero-role {
-  color: var(--site-accent);
-}
-
-html:not(.dark) .hero-copy,
 html:not(.dark) .skill-chip,
 html:not(.dark) .project-card-content p,
 html:not(.dark) .blog-card-content p,
@@ -142,18 +131,15 @@ html:not(.dark) .contact-copy {
   color: var(--site-muted);
 }
 
-html:not(.dark) .hero-footnote,
 html:not(.dark) .about-section > div > span {
   color: var(--site-subtle);
 }
 
-html:not(.dark) .secondary-link,
 html:not(.dark) .project-card-content h3,
 html:not(.dark) .blog-card-content h3 {
   color: var(--site-text);
 }
 
-html:not(.dark) .secondary-link,
 html:not(.dark) .skill-chip,
 html:not(.dark) .project-card,
 html:not(.dark) .blog-card,
@@ -163,7 +149,6 @@ html:not(.dark) .contact-section {
   background-color: var(--site-surface);
 }
 
-html:not(.dark) .secondary-link:hover,
 html:not(.dark) .skill-chip:hover,
 html:not(.dark) .project-card:hover,
 html:not(.dark) .blog-card:hover {
@@ -193,16 +178,6 @@ html:not(.dark) .contact-form {
   padding: 7rem 0 3rem;
 }
 
-.hero-section {
-  min-height: 31rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2rem 0 4rem;
-}
-
-.hero-eyebrow,
 .section-kicker {
   display: flex;
   align-items: center;
@@ -215,94 +190,6 @@ html:not(.dark) .contact-form {
   letter-spacing: 0.1em;
   line-height: 1.5;
   text-transform: uppercase;
-}
-
-.hero-eyebrow-dot {
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 50%;
-  background: var(--site-green);
-  box-shadow: 0 0 0.75rem color-mix(in srgb, var(--site-green), transparent 35%);
-}
-
-.hero-title {
-  margin: 0;
-  color: var(--site-text);
-  font-size: clamp(2.75rem, 7vw, 4.5rem);
-  font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 1.08;
-}
-
-.hero-title span {
-  color: var(--site-accent-strong);
-}
-
-.hero-role {
-  margin: 0.75rem 0 0;
-  color: var(--site-accent);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.hero-copy {
-  max-width: 42rem;
-  margin: 1rem 0 0;
-  color: var(--site-muted);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.75rem;
-}
-
-.primary-link,
-.secondary-link {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1.15rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
-}
-
-.primary-link {
-  background: var(--site-accent-strong);
-  color: var(--site-accent-contrast);
-}
-
-.primary-link:hover {
-  background: var(--site-accent);
-  transform: translateY(-1px);
-}
-
-.secondary-link {
-  border-color: var(--site-border);
-  background: var(--site-surface);
-  color: var(--site-text);
-}
-
-.secondary-link:hover {
-  border-color: color-mix(in srgb, var(--site-accent), transparent 45%);
-  background: var(--site-surface-high);
-}
-
-.hero-footnote {
-  display: flex;
-  gap: 0.65rem;
-  margin-top: 2rem;
-  color: var(--site-subtle);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.72rem;
 }
 
 .portfolio-section {
@@ -698,15 +585,6 @@ html:not(.dark) .contact-form {
   .portfolio-main {
     width: min(100% - 2rem, 1160px);
     padding-top: 5.5rem;
-  }
-
-  .hero-section {
-    min-height: 28rem;
-    padding: 2rem 0 3rem;
-  }
-
-  .hero-copy {
-    font-size: 0.92rem;
   }
 
   .portfolio-section {
