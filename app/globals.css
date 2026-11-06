@@ -197,10 +197,6 @@ html:not(.dark) .contact-form {
   scroll-margin-top: 6.5rem;
 }
 
-.portfolio-section > .section-kicker {
-  margin-bottom: 0.5rem;
-}
-
 .portfolio-section > .section-title,
 .about-section .section-title {
   margin: 0 0 1.5rem;
