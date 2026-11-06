@@ -1,5 +1,5 @@
 import React from "react";
-import { projectList } from "../data/data";
+import { projectList } from "../data/projects";
 import AnimatedDiv from "../components/AnimatedDiv";
 import ProjectGrid from "../components/ProjectGrid";
 

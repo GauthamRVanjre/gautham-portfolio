@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { projectList } from "../../data/data";
+import { projectList } from "../../data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";

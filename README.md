@@ -48,3 +48,9 @@ The website can be deployed using various platforms like Vercel, Netlify, or AWS
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## pending 
+
+Making the send email functional
+Adding back to resume link 
+Add the AI chat functionality
