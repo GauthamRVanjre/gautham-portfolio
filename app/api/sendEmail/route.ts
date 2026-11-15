@@ -45,6 +45,13 @@ export async function POST(req: Request) {
       to: ["vanjregautham@gmail.com"],
       reply_to: email,
       subject: "New portfolio inquiry: " + inquiry_type,
+      text: [
+        "New portfolio inquiry from " + name + " (" + email + ")",
+        "",
+        "1. Inquiry type: " + inquiry_type,
+        "2. Scope: " + scope,
+        "3. Message: " + message,
+      ].join("\n"),
       react: EmailTemplate({
         name,
         email,
