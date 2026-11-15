@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { ArrowUpRight, Mail, Send } from "lucide-react";
 import { socials } from "../data/data";
 
@@ -11,9 +11,56 @@ const projectScopes = [
   "Just Exploring",
 ];
 
+type SubmissionStatus = "idle" | "success" | "error";
+
 export default function ContactForm() {
   const [selectedScope, setSelectedScope] = useState(projectScopes[0]);
-  const [isDrafted, setIsDrafted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionStatus, setSubmissionStatus] =
+    useState<SubmissionStatus>("idle");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    if (isSubmitting) {
+      return;
+    }
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    setIsSubmitting(true);
+    setSubmissionStatus("idle");
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          inquiry_type: formData.get("inquiry_type"),
+          scope: selectedScope,
+          message: formData.get("message"),
+          website: formData.get("website"),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to send message");
+      }
+
+      form.reset();
+      setSelectedScope(projectScopes[0]);
+      setSubmissionStatus("success");
+    } catch {
+      setSubmissionStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   return (
     <section className="contact-section" id="contact">
@@ -56,13 +103,7 @@ export default function ContactForm() {
         </p>
       </div>
 
-      <form
-        className="contact-form"
-        onSubmit={(event) => {
-          event.preventDefault();
-          setIsDrafted(true);
-        }}
-      >
+      <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form-heading">
           <span className="section-kicker">PROJECT INQUIRY</span>
           <h3>Tell me a little about it</h3>
@@ -92,9 +133,14 @@ export default function ContactForm() {
           </label>
         </div>
 
-        <label className="contact-field" htmlFor="contact-topic">
-          <span>Inquiry Type</span>
-          <select defaultValue="" id="contact-topic" name="topic">
+        <label className="contact-field" htmlFor="contact-inquiry-type">
+          <span>Inquiry Type *</span>
+          <select
+            defaultValue=""
+            id="contact-inquiry-type"
+            name="inquiry_type"
+            required
+          >
             <option disabled value="">
               Select an inquiry type
             </option>
@@ -133,20 +179,52 @@ export default function ContactForm() {
           />
         </label>
 
+        <div
+          aria-hidden="true"
+          style={{
+            height: 0,
+            left: "-9999px",
+            overflow: "hidden",
+            position: "absolute",
+            width: 0,
+          }}
+        >
+          <label htmlFor="contact-website">Website</label>
+          <input
+            autoComplete="off"
+            id="contact-website"
+            name="website"
+            tabIndex={-1}
+            type="text"
+          />
+        </div>
+
         <div className="contact-submit-row">
-          <button className="contact-submit" type="submit">
-            <span>{isDrafted ? "Message ready" : "Send Message"}</span>
+          <button
+            className="contact-submit"
+            disabled={isSubmitting}
+            type="submit"
+          >
+            <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
             <Send aria-hidden="true" size={16} />
           </button>
           <span className="contact-local-note">
-            {isDrafted
-              ? "Message delivery will be connected later."
-              : "Form preview · sending is not connected yet"}
+            {submissionStatus === "success"
+              ? "Message sent successfully."
+              : submissionStatus === "error"
+                ? "Message could not be sent. Please try again."
+                : "Your message will be sent securely."}
           </span>
         </div>
-        {isDrafted && (
+
+        {submissionStatus === "success" && (
           <p className="contact-form-status" role="status">
-            Your message is ready to send once contact integration is connected.
+            Thanks for reaching out. I&apos;ll get back to you soon.
+          </p>
+        )}
+        {submissionStatus === "error" && (
+          <p className="contact-form-status" role="alert">
+            Something went wrong while sending your message. Please try again.
           </p>
         )}
       </form>
