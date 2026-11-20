@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <main className="portfolio-main">
       <Hero />
-      <Skills />
       <WorkExperience />
       <Projects />
+      <Skills />
       <Blogs />
       <About />
       <ContactForm />
