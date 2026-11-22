@@ -4,6 +4,7 @@ import getFit from "@/public/getFit-Home.jpeg";
 import shadcn from "@/public/shadcn.png";
 import thecrownSociety from "@/public/thecrownsocitey.png";
 import ainftMinter from "@/public/ai_nft_dapp.png";
+import docCare from "@/public/doc-care.png";
 
 export const projectSectionContent = {
   kicker: "Projects",
@@ -11,6 +12,33 @@ export const projectSectionContent = {
 };
 
 export const projectList = [
+  {
+    id: 7,
+    tag: "top",
+    title: "Doc Care",
+    category: "Full Stack AI",
+    image: docCare,
+    description:
+      "A working full-stack voice AI demo that uses tool calling to check doctor availability, offer alternative slots, and save bookings in Supabase Postgres after explicit on-screen approval.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ],
+    url: "https://demo-care-clinic.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/doctor-appointment-booking",
+    detailedDescription:
+      "Built an agentic appointment booking workflow with Agora Conversational AI and Murf. Voice-driven tool calls handle doctor lookup, availability checks, and booking review. Live transcripts and appointment details support explicit on-screen approval before the server saves the booking in Supabase Postgres. Emergency handling stops the booking flow and directs users toward urgent help. Built with Next.js, React, and TypeScript, and deployed on Vercel.",
+    features: [
+      "Natural voice interaction with Agora and Murf.",
+      "Tool-based doctor lookup and availability checks.",
+      "Alternative slots when the requested time is unavailable.",
+      "Live transcripts, appointment review, and explicit on-screen approval.",
+      "Confirmed bookings persisted in Supabase Postgres.",
+      "Emergency redirection that stops the booking flow.",
+    ],
+  },
   {
     id: 1,
     tag: "top",
