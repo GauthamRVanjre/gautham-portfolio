@@ -15,11 +15,11 @@ export const careerSectionContent = {
 export const careerJourneyEntries: CareerJourneyEntry[] = [
   {
     Date: "July, 2024 - Present",
-    title: "SDE-1 UI",
+    title: "Software Development Engineer 1",
     Company: "HashedIn by Deloitte",
     location: "Bengaluru, India",
     description:
-      "Collaborating with a team of developers to build interactive and responsive UI components using React.js and Ant Design. Work closely with backend engineers to integrate APIs seamlessly into the application using GraphQL, ensuring efficient data flow and performance. Contribute to backend development using the Django framework, broadening my technical expertise and supporting a full-stack development approach.",
+      "Lead a frontend team of 4 engineers across 2 organizations, building an enterprise Accounts Payable automation product and owning code reviews, sprint coordination, and cross-team technical decisions. Integrated AI-powered invoice data-extraction APIs for OCR-based field population across 300K+ invoices annually, representing $5B+ in invoice value. Architected a config-driven approval-workflow UI for dynamic multi-tier invoice routing used by 60+ enterprise users. Owned role-based access control across admin and manager panels, and built real-time analytics dashboards with Recharts to surface invoice-pipeline metrics and approval trends.",
     skills: ["React", "FastAPI", "GraphQL", "AWS", "Gen AI"],
   },
   {
