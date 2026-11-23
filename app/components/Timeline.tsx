@@ -26,7 +26,11 @@ const Timeline = () => {
             <h4 className="vertical-timeline-element-subtitle">
               {e.Company} <span aria-hidden="true">·</span> {e.location}
             </h4>
-            <p>{e.description}</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-[0.84rem] leading-[1.65] text-[color:var(--site-text)]">
+              {e.description.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
             {e.skills && (
               <div className="timeline-skills" aria-label="Skills used">
                 {e.skills.map((skill) => (

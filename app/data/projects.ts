@@ -5,6 +5,8 @@ import shadcn from "@/public/shadcn.png";
 import thecrownSociety from "@/public/thecrownsocitey.png";
 import ainftMinter from "@/public/ai_nft_dapp.png";
 import docCare from "@/public/doc-care.png";
+import brewHaven from "@/public/brew-haven.png";
+import decentraFiverr from "@/public/decentrafiverr.png";
 
 export const projectSectionContent = {
   kicker: "Projects",
@@ -40,6 +42,59 @@ export const projectList = [
     ],
   },
   {
+    id: 9,
+    tag: "top",
+    title: "DecentraFiverr",
+    category: "Web3",
+    image: decentraFiverr,
+    description:
+      "A freelance marketplace on Ethereum Sepolia with contract-held ETH escrow, IPFS deliverables, and client-approved payment release.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
+    url: "https://decentralized-fiverr-iota.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/Decentralized-Fiverr",
+    detailedDescription:
+      "Built a Web3 freelance marketplace connecting a React and TypeScript interface to a Solidity escrow contract on Ethereum Sepolia. Clients create jobs and deposit test ETH into the contract, while freelancers submit deliverables through IPFS and Pinata. The job poster reviews the submission and approves payment release; the contract enforces caller and job-state checks before transferring funds. RainbowKit, wagmi, and viem handle wallet and contract interactions, with Chainlink providing USD-to-ETH conversion. This is a testnet demonstration with no dispute-resolution or refund workflow.",
+    features: [
+      "Wallet connection with RainbowKit on Ethereum Sepolia.",
+      "Job creation with contract-held test ETH escrow.",
+      "Requirements and deliverables stored through IPFS and Pinata.",
+      "Client-approved payment release enforced by the smart contract.",
+      "Job filtering by status and ETH amount.",
+      "Chainlink ETH/USD price conversion.",
+    ],
+  },
+  {
+    id: 8,
+    tag: "top",
+    title: "Brew Haven · Coffee Dapp",
+    category: "Web3",
+    image: brewHaven,
+    description:
+      "A coffee-ordering dApp on Ethereum Sepolia with wallet connection, ETH payments, and an on-chain history of purchases.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hardhat/hardhat-original.svg",
+    ],
+    url: "https://coffee-dapp-ten.vercel.app/",
+    github: "https://github.com/GauthamRVanjre/Coffee-dapp",
+    detailedDescription:
+      "Built a coffee-ordering application with React and TypeScript, connecting a menu and shopping cart to a Solidity smart contract on Ethereum Sepolia. RainbowKit handles wallet connection, while wagmi and viem support contract reads and purchases. Each purchase forwards test ETH to the shop owner and records the buyer, items, amount, and timestamp on-chain. The Sippers page reads this history from the contract. This is a testnet demonstration, with no separate application backend.",
+    features: [
+      "Wallet connection with RainbowKit.",
+      "Coffee menu and shopping cart.",
+      "Purchases using Sepolia test ETH.",
+      "Transaction confirmation and payment result pages.",
+      "On-chain purchase history with buyer, items, amount, and timestamp.",
+    ],
+  },
+  {
     id: 1,
     tag: "top",
     title: "The Crown Society",
@@ -63,31 +118,6 @@ export const projectList = [
       " Searching and filtering users and investments",
       " Authentication",
       "Customer Data keeping store",
-    ],
-  },
-  {
-    id: 2,
-    tag: "top",
-    title: "Summarize GPT",
-    category: "Full Stack",
-    image: gadaElectronics,
-    description:
-      "In progress project. My aim is to summarize blogs for end user, when they paste the URL of the blog",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      shadcn,
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    ],
-    github: "https://github.com/GauthamRVanjre/SummarizeGPT",
-    detailedDescription:
-      "My aim is to summarize blogs for end user, when they paste the URL of the blog",
-    features: [
-      "Payment Gateway integration",
-      " Authentication",
-      "Customer blog history",
     ],
   },
   {

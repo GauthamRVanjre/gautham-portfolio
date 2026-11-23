@@ -1,5 +1,10 @@
 export const socials = [
   {
+    name: "Hashnode",
+    url: "https://gautham10.hashnode.dev/",
+    icon: "/blog.svg",
+  },
+  {
     name: "Github",
     url: "https://github.com/GauthamRVanjre",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
