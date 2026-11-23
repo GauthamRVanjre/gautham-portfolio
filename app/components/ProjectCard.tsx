@@ -1,6 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
@@ -33,7 +34,12 @@ const ProjectCard = ({
       className="h-fit"
     >
       <div className="project-card overflow-hidden border rounded-lg">
-        <Link href={`/projects/${id}`}>
+        <Link
+          href={`/projects/${id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View ${title} details (opens in a new tab)`}
+        >
           <Image
             className="object-cover md:h-[180px]"
             src={image}
@@ -43,14 +49,20 @@ const ProjectCard = ({
 
         <div className="project-card-content p-4">
           <div className="flex justify-between items-center">
-            <Link href={`/projects/${id}`}>
-              <h3 className="project-card-title text-xl font-bold my-3">
-                {title}
+            <Link
+              href={`/projects/${id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${title} details (opens in a new tab)`}
+            >
+              <h3 className="project-card-title flex items-center gap-2 text-xl font-bold my-3">
+                <span>{title}</span>
+                <ArrowUpRight aria-hidden="true" size={16} className="shrink-0" />
               </h3>
             </Link>
           </div>
 
-          <p className="opacity-80">{description}</p>
+          <p className="line-clamp-2 opacity-80">{description}</p>
 
           <div className="flex justify-between items-center mt-3">
             <div className="flex gap-2">
@@ -77,6 +89,7 @@ const ProjectCard = ({
                 className="rounded bg-green-100 pt-2  text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
                 href={url}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
               </a>
@@ -84,6 +97,7 @@ const ProjectCard = ({
             <a
               href={github}
               target="_blank"
+              rel="noopener noreferrer"
               className="p-2  text-sm dark:bg-zinc-800 dark:hover:bg-zinc-950 bg-zinc-100 hover:bg-zinc-200 rounded-md"
             >
               Github
