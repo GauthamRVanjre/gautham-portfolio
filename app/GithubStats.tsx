@@ -4,6 +4,8 @@ import GitHubCalendar from "react-github-calendar";
 import Link from "next/link";
 
 const GithubStats = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="github-activity">
       <div className="github-activity-header">
@@ -22,7 +24,7 @@ const GithubStats = () => {
       <div className="github-calendar">
         <GitHubCalendar
           colorScheme="dark"
-          year={2024}
+          year={currentYear}
           hideColorLegend={true}
           username="GauthamRVanjre"
         />

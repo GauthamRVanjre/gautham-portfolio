@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { ArrowUpRight, Mail, Send } from "lucide-react";
+import { ArrowUpRight, BookOpen, Mail, Send } from "lucide-react";
 import { socials } from "../data/data";
 
 const projectScopes = [
@@ -81,7 +81,7 @@ export default function ContactForm() {
             <ArrowUpRight aria-hidden="true" size={15} />
           </a>
           {socials
-            .filter((social) => social.name === "LinkedIn")
+            .filter((social) => ["LinkedIn", "Hashnode"].includes(social.name))
             .map((social) => (
               <a
                 key={social.name}
@@ -89,10 +89,14 @@ export default function ContactForm() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="contact-detail-icon" aria-hidden="true">
-                  in
-                </span>
-                <span>{social.name} Profile</span>
+                {social.name === "Hashnode" ? (
+                  <BookOpen aria-hidden="true" size={17} />
+                ) : (
+                  <span className="contact-detail-icon" aria-hidden="true">
+                    in
+                  </span>
+                )}
+                <span>{social.name === "Hashnode" ? "Hashnode Blog" : "LinkedIn Profile"}</span>
                 <ArrowUpRight aria-hidden="true" size={15} />
               </a>
             ))}

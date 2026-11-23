@@ -55,7 +55,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
-    url: "https://decentralized-fiverr-fawn.vercel.app/",
+    url: "https://decentralized-fiverr-iota.vercel.app/",
     github: "https://github.com/GauthamRVanjre/Decentralized-Fiverr",
     detailedDescription:
       "Built a Web3 freelance marketplace connecting a React and TypeScript interface to a Solidity escrow contract on Ethereum Sepolia. Clients create jobs and deposit test ETH into the contract, while freelancers submit deliverables through IPFS and Pinata. The job poster reviews the submission and approves payment release; the contract enforces caller and job-state checks before transferring funds. RainbowKit, wagmi, and viem handle wallet and contract interactions, with Chainlink providing USD-to-ETH conversion. This is a testnet demonstration with no dispute-resolution or refund workflow.",
@@ -118,31 +118,6 @@ export const projectList = [
       " Searching and filtering users and investments",
       " Authentication",
       "Customer Data keeping store",
-    ],
-  },
-  {
-    id: 2,
-    tag: "top",
-    title: "Summarize GPT",
-    category: "Full Stack",
-    image: gadaElectronics,
-    description:
-      "In progress project. My aim is to summarize blogs for end user, when they paste the URL of the blog",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      shadcn,
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    ],
-    github: "https://github.com/GauthamRVanjre/SummarizeGPT",
-    detailedDescription:
-      "My aim is to summarize blogs for end user, when they paste the URL of the blog",
-    features: [
-      "Payment Gateway integration",
-      " Authentication",
-      "Customer blog history",
     ],
   },
   {
