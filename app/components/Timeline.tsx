@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import React from "react";
 import AnimatedDiv from "./AnimatedDiv";
 import { careerJourneyEntries } from "../data/careerJourney";
+import { Award } from "lucide-react";
 
 const Timeline = () => {
   return (
@@ -31,6 +32,27 @@ const Timeline = () => {
                 <li key={point}>{point}</li>
               ))}
             </ul>
+            {e.awards && (
+              <div className="mt-5 border-t border-[var(--site-border)] pt-4">
+                <h5 className="mb-3 flex items-center gap-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[var(--site-accent)]">
+                  <Award size={15} aria-hidden="true" />
+                  Awards &amp; recognition
+                </h5>
+                <ul className="flex flex-wrap gap-2" aria-label={`${e.Company} awards`}>
+                  {e.awards.map((award) => (
+                    <li
+                      key={`${award.title}-${award.date}`}
+                      className="flex flex-wrap items-baseline gap-x-2 gap-y-1 rounded-lg border border-[var(--site-border)] bg-[var(--site-accent-soft)] px-3 py-2 text-xs leading-relaxed"
+                    >
+                      <span className="font-medium text-[var(--site-text)]">{award.title}</span>
+                      <time dateTime={award.date} className="text-[var(--site-muted)]">
+                        {award.dateLabel}
+                      </time>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {e.skills && (
               <div className="timeline-skills" aria-label="Skills used">
                 {e.skills.map((skill) => (
