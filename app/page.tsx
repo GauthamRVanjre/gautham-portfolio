@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Skills from "./skills/SkillGrid";
 import WorkExperience from "./WorkExperience";
 import ContactForm from "./components/ContactForm";
+import Certifications from "./Certifications";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WorkExperience />
       <Projects />
       <Skills />
+      <Certifications />
       <Blogs />
       <About />
       <ContactForm />
