@@ -54,10 +54,17 @@ const Timeline = () => {
               </div>
             )}
             {e.skills && (
-              <div className="timeline-skills" aria-label="Skills used">
-                {e.skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
-                ))}
+              <div className="mt-5">
+                <h5 className="mb-3 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[var(--site-accent)]">
+                  Skills
+                </h5>
+                <div className="flex flex-wrap gap-2" aria-label="Skills used">
+                  {e.skills.map((skill) => (
+                    <span key={skill} className="rounded-md border border-[var(--site-border)] bg-[var(--site-surface-raised)] px-[0.55rem] py-[0.3rem] text-[0.67rem] leading-[1.3] text-[var(--site-muted)]">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             )}
           </VerticalTimelineElement>

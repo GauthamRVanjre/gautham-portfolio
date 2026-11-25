@@ -70,11 +70,14 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
   },
   {
     Date: "2019 - 2023",
-    title: "Bachelor of Engineering(B.E) - ISE",
+    title: "Bachelor of Engineering (B.E.) - Information Science and Engineering",
     Company: "Dayanand Sagar College of Engineering",
     location: "Bengaluru, India",
     description: [
-      "Studied core computer science subjects, including DBMS, operating systems, and Java.",
+      "Built a foundation in computer science through DBMS, operating systems, computer networks, and object-oriented programming with Java and Python.",
+      "Studied machine learning in the fifth semester and explored blockchain concepts through dedicated coursework.",
+      "Completed coursework in user interface design and chose telecommunication as an institutional elective.",
     ],
+    skills: ["DBMS", "OOP", "Java", "Python", "Operating Systems", "Computer Networks"],
   },
 ];
