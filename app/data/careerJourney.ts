@@ -5,6 +5,7 @@ export interface CareerJourneyEntry {
   location: string;
   description: string[];
   skills?: string[];
+  awards?: { title: string; date: string; dateLabel: string }[];
 }
 
 export const careerSectionContent = {
@@ -27,6 +28,10 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
       "Built real-time Recharts dashboards showing invoice-pipeline metrics and approval trends.",
     ],
     skills: ["React", "FastAPI", "GraphQL", "AWS", "Gen AI"],
+    awards: [
+      { title: "Spot Award", date: "2025-09", dateLabel: "September 2025" },
+      { title: "Spot Award", date: "2025-06", dateLabel: "June 2025" },
+    ],
   },
   {
     Date: "February, 2024 - April, 2024",
@@ -48,6 +53,9 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
       "Implemented user authentication for authorized access to head and site offices.",
     ],
     skills: ["Next.js", "Prisma", "MongoDB", "Tailwind CSS"],
+    awards: [
+      { title: "Developer of the Month", date: "2024-01", dateLabel: "January 2024" },
+    ],
   },
   {
     Date: "March, 2023 - August, 2023",
@@ -62,11 +70,14 @@ export const careerJourneyEntries: CareerJourneyEntry[] = [
   },
   {
     Date: "2019 - 2023",
-    title: "Bachelor of Engineering(B.E) - ISE",
+    title: "Bachelor of Engineering (B.E.) - Information Science and Engineering",
     Company: "Dayanand Sagar College of Engineering",
     location: "Bengaluru, India",
     description: [
-      "Studied core computer science subjects, including DBMS, operating systems, and Java.",
+      "Built a foundation in computer science through DBMS, operating systems, computer networks, and object-oriented programming with Java and Python.",
+      "Studied machine learning in the fifth semester and explored blockchain concepts through dedicated coursework.",
+      "Completed coursework in user interface design and chose telecommunication as an institutional elective.",
     ],
+    skills: ["DBMS", "OOP", "Java", "Python", "Operating Systems", "Computer Networks"],
   },
 ];
