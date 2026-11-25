@@ -43,6 +43,12 @@ const NavBar = () => {
           </Link>
           <Link
             className="rounded-full px-[0.85rem] py-[0.55rem] text-[0.8rem] text-[var(--site-muted)] transition-colors duration-[160ms] hover:bg-[var(--site-surface-raised)] hover:text-[var(--site-accent)]"
+            href={sectionHref("certifications")}
+          >
+            Certifications
+          </Link>
+          <Link
+            className="rounded-full px-[0.85rem] py-[0.55rem] text-[0.8rem] text-[var(--site-muted)] transition-colors duration-[160ms] hover:bg-[var(--site-surface-raised)] hover:text-[var(--site-accent)]"
             href={sectionHref("blogs")}
           >
             Blogs
